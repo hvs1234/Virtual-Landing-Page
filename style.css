@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body::before
+{
+    width: 100%;
+    height: 100%;
+    background: url('images/body.png') no-repeat center center/cover;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: rgb(234, 227, 227);
+    box-shadow: 0 2px 10px black;
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+}
+.header h1
+{
+    color: brown;
+    font-family: 'Josefin Sans';
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+.header h1 span
+{
+    color: darkblue;
+    font-family: 'Josefin Sans';
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+.nav a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    margin: 0 1rem;
+    font-family: 'Mate SC';
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.nav a:hover
+{
+    color: darkblue;
+}
+
+.head-content
+{
+    position: relative;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem;
+    text-align: center;
+    background: url('images/meeting.jpg') no-repeat center center/cover; 
+    height: auto;
+}
+.head-content h1
+{
+    font-family: 'Cinzel';
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.head-content h1 span
+{
+    font-family: 'Cinzel';
+    color: darkblue;
+}
+.head-content h3
+{
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Ubuntu';
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    color: black;
+}
+.head-content button
+{
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(175, 174, 174);
+    padding: 0.8rem 4rem;
+    cursor: pointer;
+    box-shadow: 0 2px 10px black;
+}
+.head-content button a
+{
+    text-decoration: none;
+    font-family: 'Mate SC';
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    color: darkmagenta;
+}
+.head-content button a:hover
+{
+    color: darkgreen;
+}
+.line
+{
+    height: 1px;
+    background-color: black;
+    width: 20rem;
+}
+
+.about
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+}
+.about >h2
+{
+    font-family: 'Ubuntu';
+    letter-spacing: 2px;
+    color: darkblue;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+.about >p
+{
+    font-family: 'Ubuntu';
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: rgb(55, 12, 55);
+    margin-bottom: 0.5rem;
+}
+.about .line
+{
+    width: 25rem;
+}
+.about-content
+{
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    background-color: rgb(237, 237, 237);
+    /* background: url('images/body.png') no-repeat center center/cover; */
+}
+.about-content img
+{
+    width: 20rem;
+    height: 20rem;
+}
+.about-text
+{
+    margin: 0 1rem;
+}
+.about-text h4
+{
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-weight: 800;
+    font-family: 'Dosis';
+    font-size: 1.2rem;
+}
+
+.services
+{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services >h2
+{
+    color: darkblue;
+    font-family: 'Ubuntu';
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+.services >p
+{
+    color: rgb(55, 9, 55);
+    font-family: 'Ubuntu';
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.service-boxes
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+.service-box
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(to right,rgb(86, 162, 187),lightblue);
+    box-shadow: 0 2px 5px black;
+    border-radius: 20px;
+    padding: 1.5rem 1.5rem;
+    margin: 1rem 1.4rem;
+    cursor: grab;
+}
+.service-box i
+{
+    margin-bottom: 1rem;
+    color: rgb(7, 7, 26);
+    font-size: 2rem;
+}
+.service-box h4
+{
+    font-family: 'Ubuntu';
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.contact
+{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact >h2
+{
+    color: darkblue;
+    font-family: 'Ubuntu';
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+.contact >p
+{
+    color: rgb(55, 9, 55);
+    font-family: 'Ubuntu';
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.contact .form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: lightgrey;
+    border-radius: 20px;
+    box-shadow: 0 2px 20px black;
+    padding: 3rem 4rem;
+
+}
+.contact .form h2
+{
+    font-size: 3rem;
+    font-weight: 100;
+    text-shadow: 0 5px 5px lightcoral;
+    font-family: 'Mate SC';
+    letter-spacing: 2px;
+    color: rgb(39, 8, 39);
+    margin-bottom: 4rem;
+}
+.contact .form .input-here
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact .form .input-here label
+{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Mate SC';
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.contact .form .input-here input,textarea
+{
+    text-align: center;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    border: 0;
+    outline: 0;
+    font-family: 'Mate SC';
+    background-color: lightgray;
+    color: rgb(55, 3, 55);
+    letter-spacing: 2px;
+}
+.contact .form .input-here .line
+{
+    margin-bottom: 1.5rem;
+}
+.contact .form .input-here button
+{
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background-color: rgb(253, 176, 176);
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-family: 'Mate SC';
+    letter-spacing: 2px;
+    color: black;
+}
+
+.footer
+{
+    margin-top: 4rem;
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+}
+.footer h1
+{
+    text-align: center;
+    font-family: 'Mate SC';
+    font-weight: 100;
+    letter-spacing: 2px;
+}
